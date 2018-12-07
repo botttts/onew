@@ -1,6 +1,9 @@
 cconst Discord = require('discord.js');
 const client = new Discord.Client();
- 
+
+client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);
+   client.user.setActivity("اكتب اي شي",{type: 'WATCHING'})
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
